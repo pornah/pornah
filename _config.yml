@@ -17,8 +17,8 @@ title: Evergreen Songs
 email: contact@justinechacko.in
 description: > # this means to ignore newlines until "baseurl:"
   Evergreen songs. 
-baseurl: "" 
-url: "http://pornah.github.io/pornah" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/pornah" 
+url: "http://pornah.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
