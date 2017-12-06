@@ -9,16 +9,14 @@ layout: default_bootstrap
   
   {{ content }}
 </div>
-{% for post in paginator.posts %}
 
-{% if post.image.feature and post.image.feature != "" %}
-  <img src="{{ post.image.feature }}" alt="{{ post.title }}" class="img-fluid">  
-  {% endif %}
+
+
 
 
   <div class="panel-body">
   <ul class="post-list">
-    
+    {% for post in paginator.posts %}
       <li>
 
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
@@ -26,7 +24,9 @@ layout: default_bootstrap
           <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </span>&bull;
  <span  class="post-meta">{{ post.date | date: date_format }}</span>
-
+{% if post.image.feature and post.image.feature != "" %}
+  <img src="{{ post.image.feature }}" alt="{{ post.title }}" class="img-fluid">  
+  {% endif %}
 
 <hr>
       </li>
