@@ -19,9 +19,7 @@ layout: default_bootstrap
 
   <div class="post-content" itemprop="articleBody">
 
-{% if page.image.feature and page.image.feature != "" %}
-  <img src="{{ page.image.feature }}" alt="{{ post.title }}" class="img-fluid">  
-  {% endif %}
+
 {% if page.youtubeId and page.youtubeId != "" %}
   {% include youtubeplayer.html id=page.youtubeId %}
   {% endif %}

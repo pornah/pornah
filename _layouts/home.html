@@ -11,15 +11,10 @@ layout: default_bootstrap
 </div>
 {% for post in paginator.posts %}
 
-{% if page.image.feature and page.image.feature != "" %}
-  <img src="{{ page.image.feature }}" alt="{{ post.title }}" class="img-fluid">  
+{% if post.image.feature and post.image.feature != "" %}
+  <img src="{{ post.image.feature }}" alt="{{ post.title }}" class="img-fluid">  
   {% endif %}
-{% if post.youtubeId and post.youtubeId != "" %}
-  {% include youtubeplayer.html id=post.youtubeId %}
-  {% endif %}
-{% if page.fbvideoId and page.fbvideoId != "" %}
-  {% include fbvideoplayer.html id=page.fbvideoId %}
-  {% endif %}
+
 
   <div class="panel-body">
   <ul class="post-list">
