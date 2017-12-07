@@ -37,3 +37,4 @@ sass:
     - bower_components/bootstrap-sass/assets/stylesheets  # bootstrap
 paginate: 20
 paginate_path: "page:num"
+excerpt_separator: "<!--more-->"

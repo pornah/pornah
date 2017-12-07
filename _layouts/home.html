@@ -24,9 +24,8 @@ layout: default_bootstrap
           <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </span>&bull;
  <span  class="post-meta">{{ post.date | date: date_format }}</span>
-{% if post.image.feature and post.image.feature != "" %}
-  <img src="{{ post.image.feature }}" alt="{{ post.title }}" class="img-fluid">  
-  {% endif %}
+
+<a href="{{ post.url }}">{{ post.excerpt }}</a>
 
 <hr>
       </li>
